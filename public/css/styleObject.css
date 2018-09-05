@@ -1,0 +1,89 @@
+body {
+  min-height: 75rem; /* Can be removed; just added for demo purposes */
+}
+
+.album {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image: url("images_site/top4_empty.jpeg");
+  background-color: #f7f7f7;
+  /*background-position: center;*/
+   background-position: 50% 90%; 
+  background-repeat: no-repeat;
+}
+
+.card {
+  float: left;
+  width: 25%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card-thumbs {
+  background-color: rgb(255, 255, 255); 
+  float: left;
+  width: 12.5%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border-style: solid;
+  border-width: 1px;
+}
+.card > img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 120px;
+}
+
+.card-thumbs > img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 120px;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+.thumbs_up_1 {
+  position: absolute;
+  height: 50px; 
+  top: 205px;
+  left: 0px;
+}
+
+.thumbs_up_2 {
+  position: absolute;
+  height: 50px;
+  top: 200px;
+  left: 285px;
+}
+
+.thumbs_up_3 {
+  position: absolute;
+  height: 50px;
+  top: 200px;
+  left: 570px;
+}
+
+.thumbs_up_4 {
+  position: absolute;
+  height: 50px;
+  top: 200px;
+  left: 855px;
+}
+
+.goodComent{
+  background-color: rgb(119, 208, 0);
+  color: white;
+}
+
+.badComent{
+  background-color: rgb(255, 58, 0);
+  color: white;
+}

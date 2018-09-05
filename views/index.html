@@ -1,58 +1,60 @@
-<!-- This is a static file -->
-<!-- served from your routes in server.js -->
-
-<!-- You might want to try something fancier: -->
-<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
-<!-- pug: https://pugjs.org/ -->
-<!-- haml: http://haml.info/ -->
-<!-- hbs(handlebars): http://handlebarsjs.com/ -->
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Welcome to Glitch!</title>
-    <meta name="description" content="A cool thing made with Glitch">
-    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" >
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
-    <!-- import the webpage's client-side javascript file -->
-    <script src="/client.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>
-        A Dream of the Future
-      </h1>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>Login to GYC</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
 
-    <main>
-      <p class="bold">Oh hi,</p>
-      
-      <p>Tell me your hopes and dreams:</p>
-      
-      <form>
-        <input name="dream" type="text" maxlength="100" placeholder="Dreams!" aria-labelledby="submit-dream">
-        <button type="submit" id="submit-dream">Submit Dream</button>
-      </form>
-      
-      <section class="dreams">
-        <ul id="dreams"></ul>
-      </section>
-    </main>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-    <footer>
-      Made with <a href="https://glitch.com">Glitch</a>!
-    </footer>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
+      <link rel="stylesheet" href="/css/styleForm.css">
 
-  </body>
+  
+</head>
+
+<body>
+
+  <header role="banner">
+    <h1>Log in</h1>
+</header>
+
+<main role="main">
+        <form action="/login" method="post">
+  <!--  <form id="login-form" action="index.html" method="post"> -->
+        <dl>
+            <dt><label for="login-email">User name</label></dt>
+            <dd>
+                <input type="email" name="login_email" id="login-email" placeholder="Your user name" />
+                <span id="email-error" class="error-msg">Please insert your user name</span>
+            </dd>
+
+            <dt><label for="login-password">Password</label></dt>
+            <dd>
+                <input type="password" name="login_password" id="login-password" placeholder="Your Password" />
+                <span id="password-error" class="error-msg">Please insert your password</span>
+            </dd>
+        </dl>
+        <p><input type="submit" name="login-submit" id="login-submit" value="Log In" /></p>
+    </form>
+
+</main>
+
+<footer role="contentinfo">
+    <p>All right reserved &copy; 2018</p>
+</footer>
+  
+  
+
+    <script  src="../public/js/indexForm.js"></script>
+
+
+
+
+</body>
+
 </html>
