@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <script src="https://unpkg.com/vue"></script>
+  <meta charset="UTF-8">
+  <title>GVC about cellphones</title>
+  
+  
+  
+      <link rel="stylesheet" href="/css/styleObject.css">
+
+  
+</head>
+
+<body>
+
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Album example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/vue"></script>
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="react">
+    <div class="album text-muted">
+      <div class="container">
+        <div class="row">
+          <div class="card">
+            <img width="150px" src="/assets/iphone_x.jpeg" alt="Card image cap">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card">
+            <img width="150px" src="https://cdn.glitch.com/4c284753-ffc0-413c-b668-3bf97790dfde%2Foneplus_6.jpeg?1536181560049" alt="Card image cap">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card">
+            <img width="150px" src="/assets/samsung_galaxy_s9.jpeg" alt="Card image cap">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card">
+            <img width="150px" src="/assets/asus_zenfone_5z.jpeg" alt="Card image cap">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+
+          <!--------------Thumbs up & Thumbs_down with click to increase value---------->
+
+          
+          <!--------------Thumbs up & Thumbs_down------------------>     
+                      
+          <div class = "card-thumbs">
+            <button v-on:click="counter1 += 1">
+            <img width="75px" src="/assets/thumbs_up.jpeg" />
+            </button>
+            <center> <p>{{ result_1_up }}</p> </center>
+            <a class="goodComent" href="comment.html">Coment here</a>
+          </div>
+          <div class = "card-thumbs">
+            <button v-on:click="counter2 += 1">
+            <img width="75px" src="/assets/thumbs_down.jpeg" />
+            </button>
+            <center> <p>{{ result_2_down }}</p></center>
+            <a class = "badComent" href="comment.html">Coment here</a>
+          </div>
+          <div class = "card-thumbs">
+            <button v-on:click="counter3 += 1">
+            <img width="75px" src="/assets/thumbs_up.jpeg" />
+            </button>
+            <center><p>{{ result_3_up }}</p></center>
+            <a class = "goodComent" href="comment.html">Coment here</a>
+          </div>
+          <div class = "card-thumbs">
+            <button v-on:click="counter4 += 1">
+            <img width="75px" src="/assets/thumbs_down.jpeg" />
+            </button>
+            <center><p>{{ result_4_down }}</p></center>
+            <a class = "badComent" href="comment.html">Coment here</a>
+          </div>
+          <div class = "card-thumbs">
+            <button v-on:click="counter5 += 1">
+            <img width="75px" src="/assets/thumbs_up.jpeg" />
+            </button>
+            <center><p>{{ result_5_up }}</p></center>
+            <a class = "goodComent" href="comment.html">Coment here</a>
+          </div>
+          <div class = "card-thumbs">
+            <button v-on:click="counter6 += 1">
+            <img width="75px" src="/assets/thumbs_down.jpeg" />
+            </button>
+            <center><p>{{ result_6_down }}</p></center>
+            <a class = "badComent" href="comment.html">Coment here</a>
+          </div>
+          <div class = "card-thumbs">
+            <button v-on:click="counter7 += 1">
+            <img width="75px" src="/assets/thumbs_up.jpeg" />
+            </button>
+            <center><p>{{ result_7_up }}</p></center>
+            <a class = "goodComent" href="comment.html">Coment here</a>
+          </div>
+          <div class = "card-thumbs">
+            <button v-on:click="counter8 += 1">
+            <img width="75px" src="/assets/thumbs_down.jpeg" />
+            </button>
+            <center><p>{{ result_8_down }}</p></center>
+            <a class = "badComent" href="comment.html">Coment here</a>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+    <!--
+<div id="react">
+  <button @click="counter += 5">Increment</button>
+  <p>{{ result }}</p>
+</div>
+    -->
+<script>
+  var number = new Vue({
+  el: '#react',
+  data: {
+    counter1: 0,
+    counter2: 0,
+    counter3: 0,
+    counter4: 0,
+    counter5: 0,
+    counter6: 0,
+    counter7: 0,
+    counter8: 0
+  },
+  computed: {
+    result_1_up: function() {
+      console.log(this.counter1);
+      return this.counter1;
+    },
+    result_2_down: function() { 
+      console.log(this.counter2);
+      return this.counter2;
+    },
+    result_3_up: function() {
+      console.log(this.counter3);
+      return this.counter3;
+    },
+    result_4_down: function() {
+      console.log(this.counter4);
+      return this.counter4;
+    },
+    result_5_up: function() {
+      console.log(this.counter5);
+      return this.counter5;
+    },
+    result_6_down: function() {
+      console.log(this.counter6);
+      return this.counter6;
+    },
+    result_7_up: function() {
+      console.log(this.counter7);
+      return this.counter7;
+    },
+    result_8_down: function() {
+      console.log(this.counter8);
+      return this.counter8;
+    }
+
+  }
+});
+</script>
+
+
+  </body>
+</html>
+  
+  
+
+</body>
+
+</html>
