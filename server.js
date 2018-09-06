@@ -91,7 +91,7 @@ app.get('/fullView3',function(req,resp){
 	resp.sendFile('./views/fullView3.html', {root: __dirname});
 });
 
-app.get('fullView4',function(req,resp){
+app.get('/fullView4',function(req,resp){
 	resp.sendFile('./views/fullView4.html', {root: __dirname});
 });
 
