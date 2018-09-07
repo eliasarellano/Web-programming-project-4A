@@ -17,7 +17,8 @@ $(document).ready(function(){
     }
     
   function logIn(){  
-    window.open("../form-logging/form.html");
+   // window.open("../form-logging/form.html");
+    window.open("/login");
   }
 });
  
