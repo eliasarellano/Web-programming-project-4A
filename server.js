@@ -57,6 +57,10 @@ app.post('/login', function(req,resp){
 	resp.redirect('/redirects');
 });
 
+app.get('/index',function(req,resp){
+	resp.sendFile('./views/index.html', {root: __dirname});
+});
+
 app.get('/logout', function(req,resp){
 	req.session.destroy();
 	resp.redirect('/');
