@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Give your comments</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="/css/styleFullView2.css">
+
+</head>
+
+<body>
+
+    <div class="container clearfix">
+      <div class="describe-list" id="describe-list">
+          <div class="search">
+            <input type="text" placeholder="search" />
+            <i class="fa fa-search"></i>
+          </div>
+
+
+      <ul class="list">
+        <li class="clearfix">
+
+          <div class="about">
+            <hr class="m-y-2">
+
+            <div class="name">
+            MARQUE : <i class="offline"> APPLE </i></div>
+
+            <div class="name">
+            NOM DU PRODUIT : <i class="offline"> IPhone X</i></div>
+        
+            <div class="name">
+            CATEGORIE : <i class="offline"> SMARTPHONE</i></div>
+
+            <hr class="m-y-2">
+    
+            <div class="name">
+            GENRE : <i class="offline"> MIXTE</i></div>
+
+            <div class="name">
+            TYPE DU PUBLIC : <i class="offline"> ADULTE</i></div>
+
+            <hr class="m-y-2">
+
+            <div class="name">
+            COULEUR : <i class="offline"> ARGENT</i></div>
+
+            <div class="name">
+            RAM : <i class="offline"> 4 Go</i></div>
+            
+            <hr class="m-y-2">
+
+            <div class="name">
+            TELEPHONE : <i class="offline">iOS</i></div>
+
+            <div class="name">
+            DIAGONALE : <i class="offline">6,2 po</i></div>
+
+            <hr class="m-y-2">
+
+            <div class="name">
+            FONCTIONNALITE : <i class="offline">UNE CARTE SIM</i></div>
+
+           <div class="name">
+            CAPACITE : <i class="offline">64 go</i></div>
+ 
+            <hr class="m-y-2">
+
+            <div class="name">
+            COMMUNICATION : <i class="offline">LTE</i></div>
+
+            <div class="name">
+            MEMOIRE FLASH : <i class="offline">microSD</i></div>
+
+            <div class="name">
+            sécurité : <i class="offline">Lecteur d'emprunte</i></div>
+          
+          </div>
+        </li>  
+       </ul>
+      </div>
+    <div class="chat">
+
+      <div class="chat-header clearfix">
+        <div class="phone-about">
+          <div class="chat-with"> iPHONE X </div>
+          
+        
+      </div> <!-- end chat-header -->
+      <div>
+        <img src="https://cdn.glitch.com/4c284753-ffc0-413c-b668-3bf97790dfde%2Foneplus_6_2.jpeg?1536251393720"/>
+        <div class="chat-num-messages"></div><i class="fa fa-star">  </i>
+
+        <div class="logo">
+          <i class="fa fa-comment">  see other comments and give yours</i>
+        </div>
+      </div>
+
+        </div>
+      
+      <div class="chat-history">
+        <ul>
+          <li class="clearfix">
+            <div class="message-data align-right">
+              <span class="message-data-time" >10:10 AM, Today</span> &nbsp; &nbsp;
+              <span class="message-data-name" >Sylla</span> <i class="fa fa-circle me"></i>
+
+            </div>
+            <div class="message other-message float-right">
+              You should choose this one, it is the best !!
+            </div>
+          </li>
+          
+          <li>
+            <div class="message-data">
+              <span class="message-data-name"><i class="fa fa-circle online"></i> Mansour</span>
+              <span class="message-data-time">10:12 AM, Today</span>
+            </div>
+            <div class="message my-message">
+              It's good ! but can be better :)
+            </div>
+          </li>
+          
+          <li class="clearfix">
+            <div class="message-data align-right">
+              <span class="message-data-time" >10:14 AM, Today</span> &nbsp; &nbsp;
+              <span class="message-data-name" >Verdy</span> <i class="fa fa-circle me"></i>
+              
+            </div>
+            <div class="message other-message float-right">
+              Very nice !
+            </div>
+          </li>
+          
+          <li>
+            <div class="message-data">
+              <span class="message-data-name"><i class="fa fa-circle online"></i> Elias</span>
+              <span class="message-data-time">10:20 AM, Today</span>
+            </div>
+            <div class="message my-message">
+              Very good product !! amigos give it a try
+            </div>
+          </li>
+          
+          <li>
+            <div class="message-data">
+              <span class="message-data-name"><i class="fa fa-circle online"></i> Baba</span>
+              <span class="message-data-time">10:31 AM, Today</span>
+            </div>
+            <i class="fa fa-circle online"></i>
+            <i class="fa fa-circle online" style="color: #AED2A6"></i>
+            <i class="fa fa-circle online" style="color:#DAE9DA"></i>
+          </li>
+          
+        </ul>
+        
+      </div> <!-- end chat-history -->
+      
+      <div class="chat-message clearfix">
+        <textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="3"></textarea>
+                
+        <button>Send</button>
+
+      </div> <!-- end chat-message -->
+      
+    </div> <!-- end chat -->
+    
+  </div> <!-- end container -->
+
+<script id="message-template" type="text/x-handlebars-template">
+  <li class="clearfix">
+    <div class="message-data align-right">
+      <span class="message-data-time" >{{time}}, Today</span> &nbsp; &nbsp;
+      <span class="message-data-name" >Sylla</span> <i class="fa fa-circle me"></i>
+    </div>
+    <div class="message other-message float-right">
+      {{messageOutput}}
+    </div>
+  </li>
+</script>
+
+<script id="message-response-template" type="text/x-handlebars-template">
+  <li>
+    <div class="message-data">
+      <span class="message-data-name"><i class="fa fa-circle online"></i> Give your comments</span>
+      <span class="message-data-time">{{time}}, Today</span>
+    </div>
+    <div class="message my-message">
+      {{response}}
+    </div>
+  </li>
+</script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js'></script>
+    <script  src='/js/indexFullView2.js'></script>
+</body>
+</html>
