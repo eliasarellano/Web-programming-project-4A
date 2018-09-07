@@ -41,7 +41,8 @@ app.get('/', function(req,resp){
 	if(session.uniqueID){
 		resp.redirect('/redirects');
 	}
-	resp.sendFile('./views/index.html', {root: __dirname});
+	//resp.sendFile('./views/index.html', {root: __dirname});
+  resp.sendFile('./views/home.html', {root: __dirname});
 });
 
 app.post('/login', function(req,resp){

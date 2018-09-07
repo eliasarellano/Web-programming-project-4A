@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One|Sigmar+One");
+
+nav{
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+hr{
+  margin-top: 3em;
+  width: 20em;
+}
+
+#home {
+  color: white;
+}
+
+body {
+  background: url(http://justlogin.com/wp-content/uploads/2017/01/Feedback.png) no-repeat center center;
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
+  min-height: 100vh:
+  background-size: cover;
+}
+
+.btn{
+  margin: 2em 5em 5em ;
+  background: rgba(152, 133, 150, 1);
+  border: none;
+}
+
+.btn:hover{
+  background: rgba(152, 94, 109, 1);
+}
+
+.navbar{
+  margin-bottom: 0;
+}
+
+
+.fa-ul li {
+	display: inline-block;
+	padding-right: 3em;
+}
+
+.fa-ul i {
+  color: white;
+}
+
+.fa-ul i:hover{
+  color: rgba(152, 135, 143, 1);
+}
+
+#direction-section{
+  margin-bottom: 0;
+  padding-top: 5em;
+  background: rgba(73, 78, 107, 0.8);
+  min-height: 8em:
+}
+
+.social-section {
+  background: rgba(25, 34, 49, 0.8);
+  color: white;
+  min-height: 12em;
+  padding: 1em;
+}
+
+.social-section h3 {
+  padding-top: 2em;
+}
+
+.social-section ul{
+  padding-top: 1.3em;
+}
+.social-section a{
+  color: white;
+}
+
+}
