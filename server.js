@@ -100,6 +100,22 @@ app.get('/fullView4',function(req,resp){
 	resp.sendFile('./views/fullView4.html', {root: __dirname});
 });
 
+app.get('/fullView_b',function(req,resp){
+	resp.sendFile('./views/fullView_b.html', {root: __dirname});
+});
+
+app.get('/fullView2_b',function(req,resp){
+	resp.sendFile('./views/fullView2_b.html', {root: __dirname});
+});
+
+app.get('/fullView3_b',function(req,resp){
+	resp.sendFile('./views/fullView3_b.html', {root: __dirname});
+});
+
+app.get('/fullView4_b',function(req,resp){
+	resp.sendFile('./views/fullView4_b.html', {root: __dirname});
+});
+
 /*app.listen(3000, function() {
 	console.log('Listening at Port 3000')
 }); */
